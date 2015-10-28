@@ -54,8 +54,16 @@ class SecondViewController: UITableViewController {
         }
     }
 
+    private var selectedCellIndexPath : NSIndexPath?
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedCellIndexPath = indexPath
         self.performSegueWithIdentifier("presentWordScreen", sender: self)
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let destination = segue.destinationViewController as? WordViewController {
+            destination.words = ["this", "that"]
+        }
     }
 }
 

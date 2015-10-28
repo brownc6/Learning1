@@ -15,6 +15,7 @@
 		FE526D421BE0491900001A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE526D401BE0491900001A15 /* LaunchScreen.storyboard */; };
 		FE526D4D1BE0491900001A15 /* subcrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D4C1BE0491900001A15 /* subcrapTests.swift */; };
 		FE526D581BE0491900001A15 /* subcrapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D571BE0491900001A15 /* subcrapUITests.swift */; };
+		FE526D661BE0729500001A15 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D651BE0729500001A15 /* WordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FE526D531BE0491900001A15 /* subcrapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = subcrapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D571BE0491900001A15 /* subcrapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subcrapUITests.swift; sourceTree = "<group>"; };
 		FE526D591BE0491900001A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE526D651BE0729500001A15 /* WordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				FE526D3E1BE0491900001A15 /* Assets.xcassets */,
 				FE526D401BE0491900001A15 /* LaunchScreen.storyboard */,
 				FE526D431BE0491900001A15 /* Info.plist */,
+				FE526D651BE0729500001A15 /* WordViewController.swift */,
 			);
 			path = subcrap;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				FE526D3A1BE0491900001A15 /* SecondViewController.swift in Sources */,
 				FE526D361BE0491900001A15 /* AppDelegate.swift in Sources */,
+				FE526D661BE0729500001A15 /* WordViewController.swift in Sources */,
 				FE526D381BE0491900001A15 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

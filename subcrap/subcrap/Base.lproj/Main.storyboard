@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="1570" y="439"/>
         </scene>
-        <!--View Controller-->
+        <!--Word View Controller-->
         <scene sceneID="Aix-ka-GHc">
             <objects>
-                <viewController id="nb7-vS-S8X" sceneMemberID="viewController">
+                <viewController id="nb7-vS-S8X" customClass="WordViewController" customModule="subcrap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EjV-Uv-cHA"/>
                         <viewControllerLayoutGuide type="bottom" id="Bbh-h4-5wc"/>
@@ -132,9 +132,29 @@
                     <view key="view" contentMode="scaleToFill" id="s6t-8J-SD0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i41-dc-B5F">
+                                <rect key="frame" x="250" y="285.5" width="100" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tG8-ih-uKB"/>
+                                    <constraint firstAttribute="width" constant="100" id="u3K-Bh-bXa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i41-dc-B5F" firstAttribute="centerX" secondItem="s6t-8J-SD0" secondAttribute="centerX" id="Wih-um-Oaq"/>
+                            <constraint firstItem="i41-dc-B5F" firstAttribute="centerY" secondItem="s6t-8J-SD0" secondAttribute="centerY" id="cI9-Rp-Mhf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="wordLabel" destination="i41-dc-B5F" id="eZO-nV-IDr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVG-Na-Rmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
