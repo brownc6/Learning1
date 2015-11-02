@@ -8,9 +8,10 @@
 
 import UIKit
 
-class SecondViewController: UITableViewController {
+class WordCategoryController: UITableViewController {
 
-    private let cellStuff = ["TH words","WH words","ED words"]
+    private let cellStuff = ["High Frequency","Word Endings","Initial Blend"]
+    private var selectedCellIndexPath : NSIndexPath?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class SecondViewController: UITableViewController {
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,16 +55,35 @@ class SecondViewController: UITableViewController {
         }
     }
 
-    private var selectedCellIndexPath : NSIndexPath?
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedCellIndexPath = indexPath
-        self.performSegueWithIdentifier("presentWordScreen", sender: self)
-    }
-
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let destination = segue.destinationViewController as? WordViewController {
-            destination.words = ["this", "that"]
+        if segue.identifier == "SubCatSeg" {
+            let destination = segue.destinationViewController as! SubCategoryController
+            let myIndexPath = self.tableView.indexPathForSelectedRow
+            let row = myIndexPath?.row
+            if row == 0 {
+                destination.SubCats = ["one", "two", "three","four","five"]
+            } else if row == 1 {
+                destination.SubCats = ["Word Endings 1","Word Endings 2","Word Endings 3"]
+            } else if row == 2 {
+                destination.SubCats = ["Initial Blend 1", "Initial Blend 2", "Initial Blend 3"]
+            }
         }
+        
+    
+        
+        
+        
+        //if let destination = segue.destinationViewController as? WordViewController {
+        //    destination.words = ["this", "that"]
+        //    }
     }
+    
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        selectedCellIndexPath = indexPath
+//        self.performSegueWithIdentifier("SubCatSeg", sender: self)
+//    }
+
 }
 

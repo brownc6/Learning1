@@ -18,22 +18,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="222" y="279.5" width="157.5" height="41.5"/>
+                                <rect key="frame" x="221" y="279" width="158" height="42"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="194.5" height="17"/>
+                                <rect key="frame" x="202" y="329" width="195" height="17"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAW-dx-DkX">
-                                <rect key="frame" x="250" y="209.5" width="100" height="30"/>
+                                <rect key="frame" x="250" y="209" width="100" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.76078431369999999" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Word Category-->
         <scene sceneID="ZRt-xG-Ioe">
             <objects>
-                <tableViewController id="XIN-22-KtO" customClass="SecondViewController" customModule="subcrap" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="XIN-22-KtO" customClass="WordCategoryController" customModule="subcrap" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aOe-t0-FiN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,11 +90,101 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GsN-ef-wlw" id="AZD-QK-mgz">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0zq-Zi-qll">
-                                            <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="C1s-Z2-wAS" kind="show" identifier="SubCatSeg" id="sVq-Xe-bKI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XIN-22-KtO" id="Hec-8I-IdY"/>
+                            <outlet property="delegate" destination="XIN-22-KtO" id="2cw-aM-B7C"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Word Category" id="jLG-QA-zFG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjm-j0-YSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570" y="439"/>
+        </scene>
+        <!--Word Sub Category-->
+        <scene sceneID="JCZ-hr-kP5">
+            <objects>
+                <tableViewController id="C1s-Z2-wAS" customClass="SubCategoryController" customModule="subcrap" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fcM-PY-ZM7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubCatCell" textLabel="JXA-b6-DEL" style="IBUITableViewCellStyleDefault" id="EVM-QW-RM4">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EVM-QW-RM4" id="mak-TR-qmf">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JXA-b6-DEL">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="g5G-iF-k0T" kind="show" identifier="Game" id="cme-mw-5Pc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="C1s-Z2-wAS" id="T0F-Ox-hJg"/>
+                            <outlet property="delegate" destination="C1s-Z2-wAS" id="HFU-mo-Iz2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Word Sub Category" id="eWr-tH-OV3"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5Z-8l-dMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2347" y="439"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="AYN-PD-pIs">
+            <objects>
+                <tableViewController id="g5G-iF-k0T" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2yS-Lm-cou">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameCell" textLabel="FLW-Kh-Hfm" style="IBUITableViewCellStyleDefault" id="pC6-cI-GzT">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pC6-cI-GzT" id="CPQ-Op-3Kh">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FLW-Kh-Hfm">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -108,20 +198,17 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="XIN-22-KtO" id="Hec-8I-IdY"/>
-                            <outlet property="delegate" destination="XIN-22-KtO" id="2cw-aM-B7C"/>
+                            <outlet property="dataSource" destination="g5G-iF-k0T" id="yd0-jV-oF0"/>
+                            <outlet property="delegate" destination="g5G-iF-k0T" id="QlQ-gU-Qsd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="jLG-QA-zFG"/>
-                    <connections>
-                        <segue destination="nb7-vS-S8X" kind="show" identifier="presentWordScreen" id="e47-gk-4ZC"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Games" id="a9d-G7-m8g"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjm-j0-YSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1g9-Kc-uRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1570" y="439"/>
+            <point key="canvasLocation" x="3131" y="439"/>
         </scene>
-        <!--Word View Controller-->
+        <!--Spelling Screen-->
         <scene sceneID="Aix-ka-GHc">
             <objects>
                 <viewController id="nb7-vS-S8X" customClass="WordViewController" customModule="subcrap" customModuleProvider="target" sceneMemberID="viewController">
@@ -134,14 +221,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i41-dc-B5F">
-                                <rect key="frame" x="250" y="285.5" width="100" height="30"/>
+                                <rect key="frame" x="250" y="285" width="100" height="30"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="tG8-ih-uKB"/>
                                     <constraint firstAttribute="width" constant="100" id="u3K-Bh-bXa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -152,13 +239,14 @@
                             <constraint firstItem="i41-dc-B5F" firstAttribute="centerY" secondItem="s6t-8J-SD0" secondAttribute="centerY" id="cI9-Rp-Mhf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Spelling Screen" id="DJ0-yM-xzJ"/>
                     <connections>
                         <outlet property="wordLabel" destination="i41-dc-B5F" id="eZO-nV-IDr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVG-Na-Rmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2454" y="439"/>
+            <point key="canvasLocation" x="3131" y="1214"/>
         </scene>
         <!--Item-->
         <scene sceneID="P2k-Fh-GYD">

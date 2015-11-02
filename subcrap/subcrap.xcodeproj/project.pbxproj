@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832430B71BE72C4600BCFB20 /* SubCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832430B61BE72C4600BCFB20 /* SubCategoryController.swift */; };
 		FE526D361BE0491900001A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D351BE0491900001A15 /* AppDelegate.swift */; };
 		FE526D381BE0491900001A15 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D371BE0491900001A15 /* FirstViewController.swift */; };
-		FE526D3A1BE0491900001A15 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D391BE0491900001A15 /* SecondViewController.swift */; };
+		FE526D3A1BE0491900001A15 /* WordCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D391BE0491900001A15 /* WordCategoryController.swift */; };
 		FE526D3D1BE0491900001A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE526D3B1BE0491900001A15 /* Main.storyboard */; };
 		FE526D3F1BE0491900001A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE526D3E1BE0491900001A15 /* Assets.xcassets */; };
 		FE526D421BE0491900001A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE526D401BE0491900001A15 /* LaunchScreen.storyboard */; };
@@ -36,10 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		832430B61BE72C4600BCFB20 /* SubCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryController.swift; sourceTree = "<group>"; };
 		FE526D321BE0491800001A15 /* subcrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subcrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D351BE0491900001A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE526D371BE0491900001A15 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FE526D391BE0491900001A15 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FE526D391BE0491900001A15 /* WordCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCategoryController.swift; sourceTree = "<group>"; };
 		FE526D3C1BE0491900001A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE526D3E1BE0491900001A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE526D411BE0491900001A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,11 +105,12 @@
 			children = (
 				FE526D351BE0491900001A15 /* AppDelegate.swift */,
 				FE526D371BE0491900001A15 /* FirstViewController.swift */,
-				FE526D391BE0491900001A15 /* SecondViewController.swift */,
+				FE526D391BE0491900001A15 /* WordCategoryController.swift */,
 				FE526D3B1BE0491900001A15 /* Main.storyboard */,
 				FE526D3E1BE0491900001A15 /* Assets.xcassets */,
 				FE526D401BE0491900001A15 /* LaunchScreen.storyboard */,
 				FE526D431BE0491900001A15 /* Info.plist */,
+				832430B61BE72C4600BCFB20 /* SubCategoryController.swift */,
 				FE526D651BE0729500001A15 /* WordViewController.swift */,
 			);
 			path = subcrap;
@@ -262,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE526D3A1BE0491900001A15 /* SecondViewController.swift in Sources */,
+				FE526D3A1BE0491900001A15 /* WordCategoryController.swift in Sources */,
 				FE526D361BE0491900001A15 /* AppDelegate.swift in Sources */,
 				FE526D661BE0729500001A15 /* WordViewController.swift in Sources */,
+				832430B71BE72C4600BCFB20 /* SubCategoryController.swift in Sources */,
 				FE526D381BE0491900001A15 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +494,7 @@
 				FE526D5E1BE0491900001A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE526D5F1BE0491900001A15 /* Build configuration list for PBXNativeTarget "subcrapTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +503,7 @@
 				FE526D611BE0491900001A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE526D621BE0491900001A15 /* Build configuration list for PBXNativeTarget "subcrapUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +512,7 @@
 				FE526D641BE0491900001A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
