@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FullMenuViewController: UIViewController {
+class FullMenuViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
