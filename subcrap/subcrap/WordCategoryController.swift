@@ -10,7 +10,7 @@ import UIKit
 
 class WordCategoryController: UITableViewController {
 
-    private let cellStuff = ["High Frequency","Word Endings","Initial Blend"]
+    private let cellStuff: [String] = ["High Frequency","Word Endings","Initial Blend"]
     private var selectedCellIndexPath : NSIndexPath?
 
     override func viewDidLoad() {
@@ -63,11 +63,14 @@ class WordCategoryController: UITableViewController {
             let myIndexPath = self.tableView.indexPathForSelectedRow
             let row = myIndexPath?.row
             if row == 0 {
-                destination.SubCats = ["one", "two", "three","four","five"]
+                destination.SubCats = ["1 hundred", "2 Hundred", "3 Hundred","4 Hundred","5 Hundred"]
+                destination.Cat = cellStuff[0]
             } else if row == 1 {
                 destination.SubCats = ["Word Endings 1","Word Endings 2","Word Endings 3"]
+                destination.Cat = cellStuff[1]
             } else if row == 2 {
                 destination.SubCats = ["Initial Blend 1", "Initial Blend 2", "Initial Blend 3"]
+                destination.Cat = cellStuff[2]
             }
         }
         
