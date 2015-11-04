@@ -110,11 +110,11 @@
 				FE526D391BE0491900001A15 /* WordCategoryController.swift */,
 				832430B61BE72C4600BCFB20 /* SubCategoryController.swift */,
 				C31DC8C01BE88B1C0013F33C /* GameChoiceController.swift */,
+				FE526D651BE0729500001A15 /* WordViewController.swift */,
 				FE526D3B1BE0491900001A15 /* Main.storyboard */,
 				FE526D3E1BE0491900001A15 /* Assets.xcassets */,
 				FE526D401BE0491900001A15 /* LaunchScreen.storyboard */,
 				FE526D431BE0491900001A15 /* Info.plist */,
-				FE526D651BE0729500001A15 /* WordViewController.swift */,
 			);
 			path = subcrap;
 			sourceTree = "<group>";

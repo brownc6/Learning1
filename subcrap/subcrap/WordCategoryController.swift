@@ -47,13 +47,13 @@ class WordCategoryController: UITableViewController {
         return cell!
     }
 
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return "my stuff"
-        } else {
-            return "other stuff"
-        }
-    }
+//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        if section == 0 {
+//            return "my stuff"
+//        } else {
+//            return "other stuff"
+//        }
+//    }
 
     
     

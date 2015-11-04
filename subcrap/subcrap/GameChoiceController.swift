@@ -55,12 +55,24 @@ class GameChoiceController: UITableViewController {
         return cell!
     }
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return "Games"
-        } else {
-            return "other stuff"
+//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        if section == 0 {
+//            return "Games"
+//        } else {
+//            return "other stuff"
+//        }
+//    }
+//
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "spellingScreen" {
+            let destination = segue.destinationViewController as! WordViewController
+            let indexPath = tableView.indexPathForSelectedRow
+            let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!
+            destination.gameStyle = currentCell.textLabel?.text
+            
         }
-    }
 
+
+
+    }
 }

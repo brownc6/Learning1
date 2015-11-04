@@ -12,6 +12,9 @@ import Foundation
 class WordViewController: UIViewController {
 
     var words : [String]?
+    var gameStyle : String!
+    
+    
 
     @IBOutlet var wordLabel : UILabel!
 
