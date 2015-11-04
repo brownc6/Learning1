@@ -14,7 +14,6 @@
 		FE526D3A1BE0491900001A15 /* WordCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D391BE0491900001A15 /* WordCategoryController.swift */; };
 		FE526D3D1BE0491900001A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE526D3B1BE0491900001A15 /* Main.storyboard */; };
 		FE526D3F1BE0491900001A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE526D3E1BE0491900001A15 /* Assets.xcassets */; };
-		FE526D421BE0491900001A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE526D401BE0491900001A15 /* LaunchScreen.storyboard */; };
 		FE526D4D1BE0491900001A15 /* subcrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D4C1BE0491900001A15 /* subcrapTests.swift */; };
 		FE526D581BE0491900001A15 /* subcrapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D571BE0491900001A15 /* subcrapUITests.swift */; };
 		FE526D661BE0729500001A15 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D651BE0729500001A15 /* WordViewController.swift */; };
@@ -46,7 +45,6 @@
 		FE526D391BE0491900001A15 /* WordCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCategoryController.swift; sourceTree = "<group>"; };
 		FE526D3C1BE0491900001A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE526D3E1BE0491900001A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FE526D411BE0491900001A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE526D431BE0491900001A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE526D481BE0491900001A15 /* subcrapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = subcrapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D4C1BE0491900001A15 /* subcrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subcrapTests.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				FE526D651BE0729500001A15 /* WordViewController.swift */,
 				FE526D3B1BE0491900001A15 /* Main.storyboard */,
 				FE526D3E1BE0491900001A15 /* Assets.xcassets */,
-				FE526D401BE0491900001A15 /* LaunchScreen.storyboard */,
 				FE526D431BE0491900001A15 /* Info.plist */,
 			);
 			path = subcrap;
@@ -241,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE526D421BE0491900001A15 /* LaunchScreen.storyboard in Resources */,
 				FE526D3F1BE0491900001A15 /* Assets.xcassets in Resources */,
 				FE526D3D1BE0491900001A15 /* Main.storyboard in Resources */,
 			);
@@ -315,14 +311,6 @@
 				FE526D3C1BE0491900001A15 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FE526D401BE0491900001A15 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE526D411BE0491900001A15 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

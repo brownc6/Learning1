@@ -11,17 +11,17 @@ import Foundation
 
 class WordViewController: UIViewController {
 
-    var words : [String]?
+    var words : [String]? = ["set","two"]
     var gameStyle : String!
     
     
 
-    @IBOutlet var wordLabel : UILabel!
+    @IBOutlet var wordList : UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        wordLabel.text = words![0]
+        wordList.text = words![0]
 
         self.start()
     }
@@ -36,6 +36,7 @@ class WordViewController: UIViewController {
     }
 
     func doAfter5Secs(){
-        wordLabel.hidden = true
+        wordList.hidden = true
+        
     }
 }

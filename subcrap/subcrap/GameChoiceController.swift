@@ -44,7 +44,7 @@ class GameChoiceController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("BasicCellTemplate1")
+        var cell = tableView.dequeueReusableCellWithIdentifier("GameCell")
         
         if cell == nil {
             cell = UITableViewCell()
