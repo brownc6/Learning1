@@ -54,7 +54,22 @@ class GameChoiceController: UITableViewController {
         
         return cell!
     }
-    
+  
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "spell" {
+            let destination = segue.destinationViewController as! WordViewController
+            let indexPath = tableView.indexPathForSelectedRow
+            let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!
+            destination.gameStyle = currentCell.textLabel?.text
+            destination.GameWordsCat = GameWordsCat
+            
+        }
+
+    }
+}
+
+// Function for table section header if I need it
+
 //    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 //        if section == 0 {
 //            return "Games"
@@ -63,16 +78,3 @@ class GameChoiceController: UITableViewController {
 //        }
 //    }
 //
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "spellingScreen" {
-            let destination = segue.destinationViewController as! WordViewController
-            let indexPath = tableView.indexPathForSelectedRow
-            let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!
-            destination.gameStyle = currentCell.textLabel?.text
-            
-        }
-
-
-
-    }
-}
