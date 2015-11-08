@@ -23,6 +23,7 @@ class WordViewController: UIViewController {
     @IBOutlet var spellLabel : UILabel!
     @IBOutlet var spellText : UITextField!
     @IBOutlet var readyLabel :UILabel!
+    var inputText : String = "not working"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +56,21 @@ class WordViewController: UIViewController {
         self.start2()
         self.start3()
     }
+    
+    
+    @IBAction func spellEntered (sender : AnyObject) {
+        if self.spellText.text == "else" {
+            self.readyLabel.text = "Correct"
+            self.readyLabel.hidden = false
+            self.spellLabel.hidden = true
+        } else {
+            self.readyLabel.text = "Incorrect"
+            self.readyLabel.hidden = false
+            self.spellLabel.hidden = true
+        }
+
+    }
+    
    
     
 //    
