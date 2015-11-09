@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		832430B71BE72C4600BCFB20 /* SubCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832430B61BE72C4600BCFB20 /* SubCategoryController.swift */; };
+		C31538891BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C31538871BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodeld */; };
 		C31DC8C11BE88B1C0013F33C /* GameChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31DC8C01BE88B1C0013F33C /* GameChoiceController.swift */; };
 		FE526D361BE0491900001A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D351BE0491900001A15 /* AppDelegate.swift */; };
 		FE526D381BE0491900001A15 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D371BE0491900001A15 /* FirstViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		832430B61BE72C4600BCFB20 /* SubCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryController.swift; sourceTree = "<group>"; };
+		C31538881BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpellingDataStore.xcdatamodel; sourceTree = "<group>"; };
 		C31DC8C01BE88B1C0013F33C /* GameChoiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameChoiceController.swift; sourceTree = "<group>"; };
 		FE526D321BE0491800001A15 /* subcrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subcrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D351BE0491900001A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				FE526D351BE0491900001A15 /* AppDelegate.swift */,
+				C31538871BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodeld */,
 				FE526D371BE0491900001A15 /* FirstViewController.swift */,
 				FE526D391BE0491900001A15 /* WordCategoryController.swift */,
 				832430B61BE72C4600BCFB20 /* SubCategoryController.swift */,
@@ -213,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FE526D2D1BE0491800001A15 /* Build configuration list for PBXProject "subcrap" */;
+			buildConfigurationList = FE526D2D1BE0491800001A15 /* Build configuration list for PBXProject "SuperSpelling" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -268,6 +271,7 @@
 				FE526D361BE0491900001A15 /* AppDelegate.swift in Sources */,
 				FE526D661BE0729500001A15 /* WordViewController.swift in Sources */,
 				832430B71BE72C4600BCFB20 /* SubCategoryController.swift in Sources */,
+				C31538891BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodeld in Sources */,
 				C31DC8C11BE88B1C0013F33C /* GameChoiceController.swift in Sources */,
 				FE526D381BE0491900001A15 /* FirstViewController.swift in Sources */,
 			);
@@ -470,7 +474,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FE526D2D1BE0491800001A15 /* Build configuration list for PBXProject "subcrap" */ = {
+		FE526D2D1BE0491800001A15 /* Build configuration list for PBXProject "SuperSpelling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE526D5A1BE0491900001A15 /* Debug */,
@@ -507,6 +511,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C31538871BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C31538881BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodel */,
+			);
+			currentVersion = C31538881BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodel */;
+			path = SpellingDataStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FE526D2A1BE0491800001A15 /* Project object */;
 }
