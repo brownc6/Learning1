@@ -15,6 +15,7 @@ class WordViewController: UIViewController {
     var gameStyle : String!
     var GameWordsCat : String!
     var countWord : Int = 0
+    var gameScore : Int = 0
     var wordSetArray1 : [String] = ["the","and","a","to","said","in","he","I","of","it"]
     var wordSetArray2 : [String] = ["was","you","they","on","she","is","for","at","his","but"]
     var wordSetArray3 : [String] = ["that","with","all","we","can","are","up","had","my","her"]
@@ -70,17 +71,28 @@ class WordViewController: UIViewController {
         }
         self.delay(1.0){
             self.readyLabel.hidden = true
-            self.startSpellingGame()
+            if self.gameStyle == "L,C,W,C" {
+                self.LookSpellingGame()
+            }else{
+                self.readyLabel.text = "A Different Game"
+                self.readyLabel.hidden = false
+            }
+            
         }
     }
     
     
-    @IBAction func startSpellingGame(){
-        for i in 0...9{
-            wordToSpell.text = words![i]
-            wordToSpell.hidden = false
-           
-            
+    @IBAction func LookSpellingGame(){
+        wordToSpell.text = words![countWord]
+        readyLabel.hidden = true
+        spellTextInput.hidden = true
+        spellTextInput.text = ""
+        wordToSpell.hidden = false
+        self.delay(1.0){
+            self.wordToSpell.hidden = true
+            self.readyLabel.text = "Now Spell The Word"
+            self.readyLabel.hidden = false
+            self.spellTextInput.hidden = false
         }
     }
 
@@ -95,15 +107,39 @@ class WordViewController: UIViewController {
     }
     
     
-//    @IBAction func spellEntered (sender : AnyObject) {
-//        for i in 0...9{
-//            if self.spellText.text == self.words![countWord] {
-//            self.readyLabel.text = "Correct"
-//            self.readyLabel.hidden = false
-//            } else {
-//            self.readyLabel.text = "Incorrect"
-//            self.readyLabel.hidden = false
-//            }
+    @IBAction func spellEntered (sender : AnyObject) {
+        if self.spellTextInput.text == self.words![self.countWord] {
+            self.readyLabel.text = "Correct"
+            self.readyLabel.hidden = false
+            ++gameScore
+            ++countWord
+            self.delay(1.0){
+                if self.countWord < 10{
+                    self.LookSpellingGame()
+                }else{
+                    self.spellTextInput.hidden = true
+                    self.readyLabel.text = "You Scored \(self.gameScore)"
+                }
+                
+            }
+        } else {
+            self.readyLabel.text = "Incorrect"
+            self.readyLabel.hidden = false
+            ++countWord
+            self.delay(1.0){
+                if self.countWord < 10{
+                    self.LookSpellingGame()
+                }else{
+                    self.spellTextInput.hidden = true
+                    self.readyLabel.text = "You Scored \(self.gameScore)"
+                }
+                
+            }
+        }
+        
+    }
+
+//
 //        }
 //    }
     

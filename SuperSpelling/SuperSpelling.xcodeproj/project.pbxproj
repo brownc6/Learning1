@@ -111,11 +111,11 @@
 				C39811E51BF16E67007C5152 /* Assets.xcassets */,
 				C39811D71BF16E38007C5152 /* FirstViewController.swift */,
 				C39811F61BF171C7007C5152 /* Main.storyboard */,
-				C39811D81BF16E38007C5152 /* GameChoiceController.swift */,
 				C39811D91BF16E38007C5152 /* Info.plist */,
 				C39811E71BF16E9D007C5152 /* SpellingDataStore.xcdatamodeld */,
-				C39811DB1BF16E38007C5152 /* SubCategoryController.swift */,
 				C39811DC1BF16E38007C5152 /* WordCategoryController.swift */,
+				C39811DB1BF16E38007C5152 /* SubCategoryController.swift */,
+				C39811D81BF16E38007C5152 /* GameChoiceController.swift */,
 				C39811DD1BF16E38007C5152 /* WordViewController.swift */,
 			);
 			name = SuperSpelling;
