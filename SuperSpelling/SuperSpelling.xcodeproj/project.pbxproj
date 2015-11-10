@@ -20,7 +20,7 @@
 		C39811EC1BF16F3B007C5152 /* subcrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811EA1BF16F3B007C5152 /* subcrapTests.swift */; };
 		C39811EF1BF16F57007C5152 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39811ED1BF16F57007C5152 /* Info.plist */; };
 		C39811F01BF16F57007C5152 /* subcrapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811EE1BF16F57007C5152 /* subcrapUITests.swift */; };
-		C39811F31BF17045007C5152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39811F11BF17045007C5152 /* Main.storyboard */; };
+		C39811F81BF171C7007C5152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39811F61BF171C7007C5152 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,7 @@
 		C39811EA1BF16F3B007C5152 /* subcrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = subcrapTests.swift; path = SuperSpellingTests/subcrapTests.swift; sourceTree = SOURCE_ROOT; };
 		C39811ED1BF16F57007C5152 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SuperSpellingUITests/Info.plist; sourceTree = SOURCE_ROOT; };
 		C39811EE1BF16F57007C5152 /* subcrapUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = subcrapUITests.swift; path = SuperSpellingUITests/subcrapUITests.swift; sourceTree = SOURCE_ROOT; };
-		C39811F21BF17045007C5152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../subcrap/subcrap/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C39811F71BF171C7007C5152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SuperSpelling/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		FE526D321BE0491800001A15 /* SuperSpelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSpelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D481BE0491900001A15 /* SuperSpellingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSpellingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D531BE0491900001A15 /* SuperSpellingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSpellingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,9 +110,9 @@
 				C39811D51BF16E22007C5152 /* AppDelegate.swift */,
 				C39811E51BF16E67007C5152 /* Assets.xcassets */,
 				C39811D71BF16E38007C5152 /* FirstViewController.swift */,
+				C39811F61BF171C7007C5152 /* Main.storyboard */,
 				C39811D81BF16E38007C5152 /* GameChoiceController.swift */,
 				C39811D91BF16E38007C5152 /* Info.plist */,
-				C39811F11BF17045007C5152 /* Main.storyboard */,
 				C39811E71BF16E9D007C5152 /* SpellingDataStore.xcdatamodeld */,
 				C39811DB1BF16E38007C5152 /* SubCategoryController.swift */,
 				C39811DC1BF16E38007C5152 /* WordCategoryController.swift */,
@@ -246,7 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C39811F31BF17045007C5152 /* Main.storyboard in Resources */,
+				C39811F81BF171C7007C5152 /* Main.storyboard in Resources */,
 				C39811E61BF16E67007C5152 /* Assets.xcassets in Resources */,
 				C39811E01BF16E38007C5152 /* Info.plist in Resources */,
 			);
@@ -317,10 +317,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C39811F11BF17045007C5152 /* Main.storyboard */ = {
+		C39811F61BF171C7007C5152 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C39811F21BF17045007C5152 /* Base */,
+				C39811F71BF171C7007C5152 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

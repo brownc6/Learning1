@@ -9,7 +9,7 @@
         <!--Get Started-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="subcrap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="SuperSpelling" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -102,7 +102,7 @@
         <!--Word Category-->
         <scene sceneID="ZRt-xG-Ioe">
             <objects>
-                <tableViewController id="XIN-22-KtO" customClass="WordCategoryController" customModule="subcrap" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="XIN-22-KtO" customClass="WordCategoryController" customModule="SuperSpelling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aOe-t0-FiN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
         <!--Word Sub Category-->
         <scene sceneID="JCZ-hr-kP5">
             <objects>
-                <tableViewController id="C1s-Z2-wAS" customClass="SubCategoryController" customModule="subcrap" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="C1s-Z2-wAS" customClass="SubCategoryController" customModule="SuperSpelling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fcM-PY-ZM7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,7 +198,7 @@
         <!--Games-->
         <scene sceneID="AYN-PD-pIs">
             <objects>
-                <tableViewController id="g5G-iF-k0T" customClass="GameChoiceController" customModule="subcrap" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="g5G-iF-k0T" customClass="GameChoiceController" customModule="SuperSpelling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2yS-Lm-cou">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -239,7 +239,7 @@
         <!--Spelling Screen-->
         <scene sceneID="Aix-ka-GHc">
             <objects>
-                <viewController id="nb7-vS-S8X" customClass="WordViewController" customModule="subcrap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nb7-vS-S8X" customClass="WordViewController" customModule="SuperSpelling" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EjV-Uv-cHA"/>
                         <viewControllerLayoutGuide type="bottom" id="Bbh-h4-5wc"/>
