@@ -41,17 +41,17 @@
 		832430B61BE72C4600BCFB20 /* SubCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryController.swift; sourceTree = "<group>"; };
 		C31538881BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpellingDataStore.xcdatamodel; sourceTree = "<group>"; };
 		C31DC8C01BE88B1C0013F33C /* GameChoiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameChoiceController.swift; sourceTree = "<group>"; };
-		FE526D321BE0491800001A15 /* subcrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subcrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE526D321BE0491800001A15 /* SuperSpelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSpelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D351BE0491900001A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE526D371BE0491900001A15 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		FE526D391BE0491900001A15 /* WordCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCategoryController.swift; sourceTree = "<group>"; };
 		FE526D3C1BE0491900001A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE526D3E1BE0491900001A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE526D431BE0491900001A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE526D481BE0491900001A15 /* subcrapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = subcrapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE526D481BE0491900001A15 /* SuperSpellingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSpellingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D4C1BE0491900001A15 /* subcrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subcrapTests.swift; sourceTree = "<group>"; };
 		FE526D4E1BE0491900001A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE526D531BE0491900001A15 /* subcrapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = subcrapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE526D531BE0491900001A15 /* SuperSpellingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSpellingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D571BE0491900001A15 /* subcrapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subcrapUITests.swift; sourceTree = "<group>"; };
 		FE526D591BE0491900001A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE526D651BE0729500001A15 /* WordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
@@ -85,9 +85,9 @@
 		FE526D291BE0491800001A15 = {
 			isa = PBXGroup;
 			children = (
-				FE526D341BE0491800001A15 /* subcrap */,
-				FE526D4B1BE0491900001A15 /* subcrapTests */,
-				FE526D561BE0491900001A15 /* subcrapUITests */,
+				FE526D341BE0491800001A15 /* SuperSpelling */,
+				FE526D4B1BE0491900001A15 /* SuperSpellingTests */,
+				FE526D561BE0491900001A15 /* SuperSpellingUITests */,
 				FE526D331BE0491800001A15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,14 +95,14 @@
 		FE526D331BE0491800001A15 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE526D321BE0491800001A15 /* subcrap.app */,
-				FE526D481BE0491900001A15 /* subcrapTests.xctest */,
-				FE526D531BE0491900001A15 /* subcrapUITests.xctest */,
+				FE526D321BE0491800001A15 /* SuperSpelling.app */,
+				FE526D481BE0491900001A15 /* SuperSpellingTests.xctest */,
+				FE526D531BE0491900001A15 /* SuperSpellingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE526D341BE0491800001A15 /* subcrap */ = {
+		FE526D341BE0491800001A15 /* SuperSpelling */ = {
 			isa = PBXGroup;
 			children = (
 				FE526D351BE0491900001A15 /* AppDelegate.swift */,
@@ -116,33 +116,36 @@
 				FE526D3E1BE0491900001A15 /* Assets.xcassets */,
 				FE526D431BE0491900001A15 /* Info.plist */,
 			);
+			name = SuperSpelling;
 			path = subcrap;
 			sourceTree = "<group>";
 		};
-		FE526D4B1BE0491900001A15 /* subcrapTests */ = {
+		FE526D4B1BE0491900001A15 /* SuperSpellingTests */ = {
 			isa = PBXGroup;
 			children = (
 				FE526D4C1BE0491900001A15 /* subcrapTests.swift */,
 				FE526D4E1BE0491900001A15 /* Info.plist */,
 			);
+			name = SuperSpellingTests;
 			path = subcrapTests;
 			sourceTree = "<group>";
 		};
-		FE526D561BE0491900001A15 /* subcrapUITests */ = {
+		FE526D561BE0491900001A15 /* SuperSpellingUITests */ = {
 			isa = PBXGroup;
 			children = (
 				FE526D571BE0491900001A15 /* subcrapUITests.swift */,
 				FE526D591BE0491900001A15 /* Info.plist */,
 			);
+			name = SuperSpellingUITests;
 			path = subcrapUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE526D311BE0491800001A15 /* subcrap */ = {
+		FE526D311BE0491800001A15 /* SuperSpelling */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE526D5C1BE0491900001A15 /* Build configuration list for PBXNativeTarget "subcrap" */;
+			buildConfigurationList = FE526D5C1BE0491900001A15 /* Build configuration list for PBXNativeTarget "SuperSpelling" */;
 			buildPhases = (
 				FE526D2E1BE0491800001A15 /* Sources */,
 				FE526D2F1BE0491800001A15 /* Frameworks */,
@@ -152,14 +155,14 @@
 			);
 			dependencies = (
 			);
-			name = subcrap;
+			name = SuperSpelling;
 			productName = subcrap;
-			productReference = FE526D321BE0491800001A15 /* subcrap.app */;
+			productReference = FE526D321BE0491800001A15 /* SuperSpelling.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FE526D471BE0491900001A15 /* subcrapTests */ = {
+		FE526D471BE0491900001A15 /* SuperSpellingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE526D5F1BE0491900001A15 /* Build configuration list for PBXNativeTarget "subcrapTests" */;
+			buildConfigurationList = FE526D5F1BE0491900001A15 /* Build configuration list for PBXNativeTarget "SuperSpellingTests" */;
 			buildPhases = (
 				FE526D441BE0491900001A15 /* Sources */,
 				FE526D451BE0491900001A15 /* Frameworks */,
@@ -170,14 +173,14 @@
 			dependencies = (
 				FE526D4A1BE0491900001A15 /* PBXTargetDependency */,
 			);
-			name = subcrapTests;
+			name = SuperSpellingTests;
 			productName = subcrapTests;
-			productReference = FE526D481BE0491900001A15 /* subcrapTests.xctest */;
+			productReference = FE526D481BE0491900001A15 /* SuperSpellingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FE526D521BE0491900001A15 /* subcrapUITests */ = {
+		FE526D521BE0491900001A15 /* SuperSpellingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE526D621BE0491900001A15 /* Build configuration list for PBXNativeTarget "subcrapUITests" */;
+			buildConfigurationList = FE526D621BE0491900001A15 /* Build configuration list for PBXNativeTarget "SuperSpellingUITests" */;
 			buildPhases = (
 				FE526D4F1BE0491900001A15 /* Sources */,
 				FE526D501BE0491900001A15 /* Frameworks */,
@@ -188,9 +191,9 @@
 			dependencies = (
 				FE526D551BE0491900001A15 /* PBXTargetDependency */,
 			);
-			name = subcrapUITests;
+			name = SuperSpellingUITests;
 			productName = subcrapUITests;
-			productReference = FE526D531BE0491900001A15 /* subcrapUITests.xctest */;
+			productReference = FE526D531BE0491900001A15 /* SuperSpellingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -229,9 +232,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FE526D311BE0491800001A15 /* subcrap */,
-				FE526D471BE0491900001A15 /* subcrapTests */,
-				FE526D521BE0491900001A15 /* subcrapUITests */,
+				FE526D311BE0491800001A15 /* SuperSpelling */,
+				FE526D471BE0491900001A15 /* SuperSpellingTests */,
+				FE526D521BE0491900001A15 /* SuperSpellingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,12 +301,12 @@
 /* Begin PBXTargetDependency section */
 		FE526D4A1BE0491900001A15 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FE526D311BE0491800001A15 /* subcrap */;
+			target = FE526D311BE0491800001A15 /* SuperSpelling */;
 			targetProxy = FE526D491BE0491900001A15 /* PBXContainerItemProxy */;
 		};
 		FE526D551BE0491900001A15 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FE526D311BE0491800001A15 /* subcrap */;
+			target = FE526D311BE0491800001A15 /* SuperSpelling */;
 			targetProxy = FE526D541BE0491900001A15 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -407,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = subcrap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.awesome.subcrap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesome.superspellingz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -418,7 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = subcrap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.awesome.subcrap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesome.superspellingz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -483,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE526D5C1BE0491900001A15 /* Build configuration list for PBXNativeTarget "subcrap" */ = {
+		FE526D5C1BE0491900001A15 /* Build configuration list for PBXNativeTarget "SuperSpelling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE526D5D1BE0491900001A15 /* Debug */,
@@ -492,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE526D5F1BE0491900001A15 /* Build configuration list for PBXNativeTarget "subcrapTests" */ = {
+		FE526D5F1BE0491900001A15 /* Build configuration list for PBXNativeTarget "SuperSpellingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE526D601BE0491900001A15 /* Debug */,
@@ -501,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE526D621BE0491900001A15 /* Build configuration list for PBXNativeTarget "subcrapUITests" */ = {
+		FE526D621BE0491900001A15 /* Build configuration list for PBXNativeTarget "SuperSpellingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE526D631BE0491900001A15 /* Debug */,

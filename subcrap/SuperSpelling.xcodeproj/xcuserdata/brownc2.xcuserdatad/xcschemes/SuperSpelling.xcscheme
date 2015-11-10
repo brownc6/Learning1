@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE526D311BE0491800001A15"
-               BuildableName = "subcrap.app"
-               BlueprintName = "subcrap"
-               ReferencedContainer = "container:subcrap.xcodeproj">
+               BuildableName = "SuperSpelling.app"
+               BlueprintName = "SuperSpelling"
+               ReferencedContainer = "container:SuperSpelling.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE526D471BE0491900001A15"
-               BuildableName = "subcrapTests.xctest"
-               BlueprintName = "subcrapTests"
-               ReferencedContainer = "container:subcrap.xcodeproj">
+               BuildableName = "SuperSpellingTests.xctest"
+               BlueprintName = "SuperSpellingTests"
+               ReferencedContainer = "container:SuperSpelling.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE526D521BE0491900001A15"
-               BuildableName = "subcrapUITests.xctest"
-               BlueprintName = "subcrapUITests"
-               ReferencedContainer = "container:subcrap.xcodeproj">
+               BuildableName = "SuperSpellingUITests.xctest"
+               BlueprintName = "SuperSpellingUITests"
+               ReferencedContainer = "container:SuperSpelling.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE526D311BE0491800001A15"
-            BuildableName = "subcrap.app"
-            BlueprintName = "subcrap"
-            ReferencedContainer = "container:subcrap.xcodeproj">
+            BuildableName = "SuperSpelling.app"
+            BlueprintName = "SuperSpelling"
+            ReferencedContainer = "container:SuperSpelling.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE526D311BE0491800001A15"
-            BuildableName = "subcrap.app"
-            BlueprintName = "subcrap"
-            ReferencedContainer = "container:subcrap.xcodeproj">
+            BuildableName = "SuperSpelling.app"
+            BlueprintName = "SuperSpelling"
+            ReferencedContainer = "container:SuperSpelling.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE526D311BE0491800001A15"
-            BuildableName = "subcrap.app"
-            BlueprintName = "subcrap"
-            ReferencedContainer = "container:subcrap.xcodeproj">
+            BuildableName = "SuperSpelling.app"
+            BlueprintName = "SuperSpelling"
+            ReferencedContainer = "container:SuperSpelling.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
