@@ -15,13 +15,21 @@ class WordViewController: UIViewController {
     var gameStyle : String!
     var GameWordsCat : String!
     var countWord : Int = 0
-    
+    var wordSetArray1 : [String] = ["the","and","a","to","said","in","he","I","of","it"]
+    var wordSetArray2 : [String] = ["was","you","they","on","she","is","for","at","his","but"]
+    var wordSetArray3 : [String] = ["that","with","all","we","can","are","up","had","my","her"]
+    var wordSetArray4 : [String] = ["what","there","out","this","have","went","be","like","some","so"]
+    var wordSetArray5 : [String] = ["not","then","were","go","little","as","no","mum","one","them"]
+    var wordSetArray6 : [String] = ["do","me","down","dad","big","when","it’s","see","looked","very"]
+    var wordSetArray7 : [String] = ["look","don’t","come","will","into","back","from","children","him","Mr"]
+    var wordSetArray8 : [String] = ["get","just","now","came","oh","about","got","their","people","your"]
+    var wordSetArray9 : [String] = ["put","could","house","old","too","by","day","made","time","I’m"]
+    var wordSetArray10 : [String] = ["if","help","Mrs","called","here","off","asked","saw","make","an"]
     
 
 
-    @IBOutlet var wordList : UILabel!
-    @IBOutlet var spellLabel : UILabel!
-    @IBOutlet var spellText : UITextField!
+    @IBOutlet var wordToSpell : UILabel!
+    @IBOutlet var spellTextInput : UITextField!
     @IBOutlet var readyLabel :UILabel!
     var inputText : String = "not working"
 
@@ -31,17 +39,17 @@ class WordViewController: UIViewController {
         switch GameWordsCat
         {
         case "1 Hundred" :
-            words = ["one","two"]
+            words = wordSetArray1
         case "2 Hundred" :
-            words = ["two","three"]
+            words = wordSetArray2
         case "3 Hundred" :
-            words = ["three","four"]
+            words = wordSetArray3
         case "4 Hundred" :
-            words = ["four","five"]
+            words = wordSetArray4
         case "5 Hundred" :
-            words = ["five","six"]
+            words = wordSetArray5
         default:
-            words = ["else","not working"]
+            words = wordSetArray6
         }
 
     }
@@ -52,58 +60,66 @@ class WordViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        self.start()
-        self.start2()
-        self.start3()
+        self.countWord = 0
+        self.animateSpellingStart()
     }
     
-    
-    @IBAction func spellEntered (sender : AnyObject) {
-        if self.spellText.text == "else" {
-            self.readyLabel.text = "Correct"
-            self.readyLabel.hidden = false
-            self.spellLabel.hidden = true
-        } else {
-            self.readyLabel.text = "Incorrect"
-            self.readyLabel.hidden = false
-            self.spellLabel.hidden = true
-        }
-
-    }
-    
-   
-    
-//    
-   @IBAction func start(){
-    
-        let time = dispatch_time(dispatch_time_t(DISPATCH_TIME_NOW), 3 * Int64(NSEC_PER_SEC))
-        dispatch_after(time, dispatch_get_main_queue()) {
-            //put your code which should be executed with a delay here
+    @IBAction func animateSpellingStart(){
+        self.delay(0.5){
             self.readyLabel.text = "Let's Go!"
         }
-    }
-    
-    @IBAction func start2(){
-        
-        let time1 = dispatch_time(dispatch_time_t(DISPATCH_TIME_NOW), 4 * Int64(NSEC_PER_SEC))
-        dispatch_after(time1, dispatch_get_main_queue()) {
-            //put your code which should be executed with a delay here
+        self.delay(1.0){
             self.readyLabel.hidden = true
-            self.wordList.text = self.words! [0]
-            self.wordList.hidden = false
+            self.startSpellingGame()
         }
     }
     
-    @IBAction func start3(){
-        
-        let time1 = dispatch_time(dispatch_time_t(DISPATCH_TIME_NOW), 9 * Int64(NSEC_PER_SEC))
-        dispatch_after(time1, dispatch_get_main_queue()) {
-            //put your code which should be executed with a delay here
-            self.wordList.hidden = true
-            self.spellLabel.hidden = false
-            self.spellText.hidden = false
+    
+    @IBAction func startSpellingGame(){
+        for i in 0...9{
+            wordToSpell.text = words![i]
+            wordToSpell.hidden = false
+           
+            
         }
     }
+
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
+    
+    
+//    @IBAction func spellEntered (sender : AnyObject) {
+//        for i in 0...9{
+//            if self.spellText.text == self.words![countWord] {
+//            self.readyLabel.text = "Correct"
+//            self.readyLabel.hidden = false
+//            } else {
+//            self.readyLabel.text = "Incorrect"
+//            self.readyLabel.hidden = false
+//            }
+//        }
+//    }
+    
+    
+    
+//    @IBAction func start3(){
+//        
+//        let time1 = dispatch_time(dispatch_time_t(DISPATCH_TIME_NOW), 9 * Int64(NSEC_PER_SEC))
+//        dispatch_after(time1, dispatch_get_main_queue()) {
+//            //put your code which should be executed with a delay here
+//            self.wordList.hidden = true
+//            self.readyLabel.text = "Now Spell The Word"
+//            self.readyLabel.hidden = false
+//            self.spellText.hidden = false
+//        }
+//    }
 
 //
 //    wordList.text = words![0]
@@ -147,4 +163,9 @@ class WordViewController: UIViewController {
 //        spellLabel.hidden = false
 //        spellText.hidden = false
 //
+    
+//        let time1 = dispatch_time(dispatch_time_t(DISPATCH_TIME_NOW), 4 * Int64(NSEC_PER_SEC))
+//        dispatch_after(time1, dispatch_get_main_queue()) {
+//            //put your code which should be executed with a delay here
+    
 }

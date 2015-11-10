@@ -63,7 +63,7 @@ class WordCategoryController: UITableViewController {
             let myIndexPath = self.tableView.indexPathForSelectedRow
             let row = myIndexPath?.row
             if row == 0 {
-                destination.SubCats = ["Level 1", "Level 2", "Level 3","Level 4","Level 5"]
+                destination.SubCats = ["1 Hundred", "2 Hundred", "3 Hundred","4 Hundred","5 Hundred"]
                 destination.Cat = cellStuff[0]
             } else if row == 1 {
                 destination.SubCats = ["Word Endings 1","Word Endings 2","Word Endings 3"]

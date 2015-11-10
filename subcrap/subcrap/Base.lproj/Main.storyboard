@@ -259,17 +259,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Spell The Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPo-OT-3sH">
-                                <rect key="frame" x="150" y="155" width="300" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="HT3-lm-49Q"/>
-                                    <constraint firstAttribute="width" constant="300" id="V27-Nl-KRc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are You Ready?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrs-FL-JbE">
                                 <rect key="frame" x="150" y="155" width="300" height="30"/>
                                 <animations/>
@@ -278,7 +267,7 @@
                                     <constraint firstAttribute="width" constant="300" id="n8o-9f-MD2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7O-Nm-vRJ">
@@ -290,9 +279,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="spellEntered:" destination="nb7-vS-S8X" eventType="editingDidEndOnExit" id="orM-Jn-s5M"/>
-                                </connections>
                             </textField>
                         </subviews>
                         <animations/>
@@ -302,17 +288,13 @@
                             <constraint firstItem="F7O-Nm-vRJ" firstAttribute="centerX" secondItem="s6t-8J-SD0" secondAttribute="centerX" id="2tx-cu-x1r"/>
                             <constraint firstItem="i41-dc-B5F" firstAttribute="top" secondItem="F7O-Nm-vRJ" secondAttribute="bottom" constant="40" id="3BP-u7-6Dz"/>
                             <constraint firstItem="i41-dc-B5F" firstAttribute="centerX" secondItem="s6t-8J-SD0" secondAttribute="centerX" id="7gW-mg-aGe"/>
-                            <constraint firstItem="aPo-OT-3sH" firstAttribute="centerX" secondItem="s6t-8J-SD0" secondAttribute="centerX" id="MJQ-V1-jO2"/>
                             <constraint firstItem="F7O-Nm-vRJ" firstAttribute="top" secondItem="vrs-FL-JbE" secondAttribute="bottom" constant="30" id="Q3a-aS-5if"/>
                             <constraint firstItem="vrs-FL-JbE" firstAttribute="centerY" secondItem="s6t-8J-SD0" secondAttribute="centerY" id="QIP-wE-NKH"/>
                             <constraint firstItem="vrs-FL-JbE" firstAttribute="centerX" secondItem="s6t-8J-SD0" secondAttribute="centerX" id="hK9-0b-L8s"/>
                             <constraint firstItem="F7O-Nm-vRJ" firstAttribute="centerY" secondItem="s6t-8J-SD0" secondAttribute="centerY" id="lwg-g5-PrI"/>
-                            <constraint firstItem="aPo-OT-3sH" firstAttribute="top" secondItem="s6t-8J-SD0" secondAttribute="topMargin" constant="100" id="x0Z-1Q-YuV"/>
-                            <constraint firstItem="i41-dc-B5F" firstAttribute="top" secondItem="aPo-OT-3sH" secondAttribute="bottom" constant="100" id="xJ2-hB-7ga"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="x0Z-1Q-YuV"/>
                                 <exclude reference="QIP-wE-NKH"/>
                                 <exclude reference="lwg-g5-PrI"/>
                             </mask>
@@ -321,9 +303,8 @@
                     <navigationItem key="navigationItem" title="Spelling Screen" id="DJ0-yM-xzJ"/>
                     <connections>
                         <outlet property="readyLabel" destination="vrs-FL-JbE" id="4m0-kA-FFM"/>
-                        <outlet property="spellLabel" destination="aPo-OT-3sH" id="9Er-L7-YUx"/>
-                        <outlet property="spellText" destination="F7O-Nm-vRJ" id="OJS-Lg-jfv"/>
-                        <outlet property="wordList" destination="i41-dc-B5F" id="fQe-lg-j7y"/>
+                        <outlet property="spellTextInput" destination="F7O-Nm-vRJ" id="Gnx-5N-nK1"/>
+                        <outlet property="wordToSpell" destination="i41-dc-B5F" id="ZWd-8z-ZaR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVG-Na-Rmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
