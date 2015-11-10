@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		832430B71BE72C4600BCFB20 /* SubCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832430B61BE72C4600BCFB20 /* SubCategoryController.swift */; };
-		C31538891BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C31538871BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodeld */; };
-		C31DC8C11BE88B1C0013F33C /* GameChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31DC8C01BE88B1C0013F33C /* GameChoiceController.swift */; };
-		FE526D361BE0491900001A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D351BE0491900001A15 /* AppDelegate.swift */; };
-		FE526D381BE0491900001A15 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D371BE0491900001A15 /* FirstViewController.swift */; };
-		FE526D3A1BE0491900001A15 /* WordCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D391BE0491900001A15 /* WordCategoryController.swift */; };
-		FE526D3D1BE0491900001A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE526D3B1BE0491900001A15 /* Main.storyboard */; };
-		FE526D3F1BE0491900001A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE526D3E1BE0491900001A15 /* Assets.xcassets */; };
-		FE526D4D1BE0491900001A15 /* subcrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D4C1BE0491900001A15 /* subcrapTests.swift */; };
-		FE526D581BE0491900001A15 /* subcrapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D571BE0491900001A15 /* subcrapUITests.swift */; };
-		FE526D661BE0729500001A15 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE526D651BE0729500001A15 /* WordViewController.swift */; };
+		C39811D61BF16E22007C5152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811D51BF16E22007C5152 /* AppDelegate.swift */; };
+		C39811DE1BF16E38007C5152 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811D71BF16E38007C5152 /* FirstViewController.swift */; };
+		C39811DF1BF16E38007C5152 /* GameChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811D81BF16E38007C5152 /* GameChoiceController.swift */; };
+		C39811E01BF16E38007C5152 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39811D91BF16E38007C5152 /* Info.plist */; };
+		C39811E21BF16E38007C5152 /* SubCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811DB1BF16E38007C5152 /* SubCategoryController.swift */; };
+		C39811E31BF16E38007C5152 /* WordCategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811DC1BF16E38007C5152 /* WordCategoryController.swift */; };
+		C39811E41BF16E38007C5152 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811DD1BF16E38007C5152 /* WordViewController.swift */; };
+		C39811E61BF16E67007C5152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39811E51BF16E67007C5152 /* Assets.xcassets */; };
+		C39811E81BF16E9D007C5152 /* SpellingDataStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C39811E71BF16E9D007C5152 /* SpellingDataStore.xcdatamodeld */; };
+		C39811EB1BF16F3B007C5152 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39811E91BF16F3B007C5152 /* Info.plist */; };
+		C39811EC1BF16F3B007C5152 /* subcrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811EA1BF16F3B007C5152 /* subcrapTests.swift */; };
+		C39811EF1BF16F57007C5152 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39811ED1BF16F57007C5152 /* Info.plist */; };
+		C39811F01BF16F57007C5152 /* subcrapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811EE1BF16F57007C5152 /* subcrapUITests.swift */; };
+		C39811F31BF17045007C5152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39811F11BF17045007C5152 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,23 +41,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		832430B61BE72C4600BCFB20 /* SubCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryController.swift; sourceTree = "<group>"; };
-		C31538881BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpellingDataStore.xcdatamodel; sourceTree = "<group>"; };
-		C31DC8C01BE88B1C0013F33C /* GameChoiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameChoiceController.swift; sourceTree = "<group>"; };
+		C39811D51BF16E22007C5152 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SuperSpelling/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		C39811D71BF16E38007C5152 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = SuperSpelling/FirstViewController.swift; sourceTree = SOURCE_ROOT; };
+		C39811D81BF16E38007C5152 /* GameChoiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameChoiceController.swift; path = SuperSpelling/GameChoiceController.swift; sourceTree = SOURCE_ROOT; };
+		C39811D91BF16E38007C5152 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SuperSpelling/Info.plist; sourceTree = SOURCE_ROOT; };
+		C39811DB1BF16E38007C5152 /* SubCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubCategoryController.swift; path = SuperSpelling/SubCategoryController.swift; sourceTree = SOURCE_ROOT; };
+		C39811DC1BF16E38007C5152 /* WordCategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordCategoryController.swift; path = SuperSpelling/WordCategoryController.swift; sourceTree = SOURCE_ROOT; };
+		C39811DD1BF16E38007C5152 /* WordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordViewController.swift; path = SuperSpelling/WordViewController.swift; sourceTree = SOURCE_ROOT; };
+		C39811E51BF16E67007C5152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SuperSpelling/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		C39811E91BF16F3B007C5152 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SuperSpellingTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		C39811EA1BF16F3B007C5152 /* subcrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = subcrapTests.swift; path = SuperSpellingTests/subcrapTests.swift; sourceTree = SOURCE_ROOT; };
+		C39811ED1BF16F57007C5152 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SuperSpellingUITests/Info.plist; sourceTree = SOURCE_ROOT; };
+		C39811EE1BF16F57007C5152 /* subcrapUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = subcrapUITests.swift; path = SuperSpellingUITests/subcrapUITests.swift; sourceTree = SOURCE_ROOT; };
+		C39811F21BF17045007C5152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../subcrap/subcrap/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE526D321BE0491800001A15 /* SuperSpelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSpelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE526D351BE0491900001A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE526D371BE0491900001A15 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FE526D391BE0491900001A15 /* WordCategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCategoryController.swift; sourceTree = "<group>"; };
-		FE526D3C1BE0491900001A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FE526D3E1BE0491900001A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FE526D431BE0491900001A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE526D481BE0491900001A15 /* SuperSpellingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSpellingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE526D4C1BE0491900001A15 /* subcrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subcrapTests.swift; sourceTree = "<group>"; };
-		FE526D4E1BE0491900001A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE526D531BE0491900001A15 /* SuperSpellingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSpellingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE526D571BE0491900001A15 /* subcrapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subcrapUITests.swift; sourceTree = "<group>"; };
-		FE526D591BE0491900001A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE526D651BE0729500001A15 /* WordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,16 +107,16 @@
 		FE526D341BE0491800001A15 /* SuperSpelling */ = {
 			isa = PBXGroup;
 			children = (
-				FE526D351BE0491900001A15 /* AppDelegate.swift */,
-				C31538871BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodeld */,
-				FE526D371BE0491900001A15 /* FirstViewController.swift */,
-				FE526D391BE0491900001A15 /* WordCategoryController.swift */,
-				832430B61BE72C4600BCFB20 /* SubCategoryController.swift */,
-				C31DC8C01BE88B1C0013F33C /* GameChoiceController.swift */,
-				FE526D651BE0729500001A15 /* WordViewController.swift */,
-				FE526D3B1BE0491900001A15 /* Main.storyboard */,
-				FE526D3E1BE0491900001A15 /* Assets.xcassets */,
-				FE526D431BE0491900001A15 /* Info.plist */,
+				C39811D51BF16E22007C5152 /* AppDelegate.swift */,
+				C39811E51BF16E67007C5152 /* Assets.xcassets */,
+				C39811D71BF16E38007C5152 /* FirstViewController.swift */,
+				C39811D81BF16E38007C5152 /* GameChoiceController.swift */,
+				C39811D91BF16E38007C5152 /* Info.plist */,
+				C39811F11BF17045007C5152 /* Main.storyboard */,
+				C39811E71BF16E9D007C5152 /* SpellingDataStore.xcdatamodeld */,
+				C39811DB1BF16E38007C5152 /* SubCategoryController.swift */,
+				C39811DC1BF16E38007C5152 /* WordCategoryController.swift */,
+				C39811DD1BF16E38007C5152 /* WordViewController.swift */,
 			);
 			name = SuperSpelling;
 			path = subcrap;
@@ -123,8 +125,8 @@
 		FE526D4B1BE0491900001A15 /* SuperSpellingTests */ = {
 			isa = PBXGroup;
 			children = (
-				FE526D4C1BE0491900001A15 /* subcrapTests.swift */,
-				FE526D4E1BE0491900001A15 /* Info.plist */,
+				C39811E91BF16F3B007C5152 /* Info.plist */,
+				C39811EA1BF16F3B007C5152 /* subcrapTests.swift */,
 			);
 			name = SuperSpellingTests;
 			path = subcrapTests;
@@ -133,8 +135,8 @@
 		FE526D561BE0491900001A15 /* SuperSpellingUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FE526D571BE0491900001A15 /* subcrapUITests.swift */,
-				FE526D591BE0491900001A15 /* Info.plist */,
+				C39811ED1BF16F57007C5152 /* Info.plist */,
+				C39811EE1BF16F57007C5152 /* subcrapUITests.swift */,
 			);
 			name = SuperSpellingUITests;
 			path = subcrapUITests;
@@ -244,8 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE526D3F1BE0491900001A15 /* Assets.xcassets in Resources */,
-				FE526D3D1BE0491900001A15 /* Main.storyboard in Resources */,
+				C39811F31BF17045007C5152 /* Main.storyboard in Resources */,
+				C39811E61BF16E67007C5152 /* Assets.xcassets in Resources */,
+				C39811E01BF16E38007C5152 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39811EB1BF16F3B007C5152 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39811EF1BF16F57007C5152 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,13 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE526D3A1BE0491900001A15 /* WordCategoryController.swift in Sources */,
-				FE526D361BE0491900001A15 /* AppDelegate.swift in Sources */,
-				FE526D661BE0729500001A15 /* WordViewController.swift in Sources */,
-				832430B71BE72C4600BCFB20 /* SubCategoryController.swift in Sources */,
-				C31538891BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodeld in Sources */,
-				C31DC8C11BE88B1C0013F33C /* GameChoiceController.swift in Sources */,
-				FE526D381BE0491900001A15 /* FirstViewController.swift in Sources */,
+				C39811D61BF16E22007C5152 /* AppDelegate.swift in Sources */,
+				C39811E31BF16E38007C5152 /* WordCategoryController.swift in Sources */,
+				C39811DF1BF16E38007C5152 /* GameChoiceController.swift in Sources */,
+				C39811E41BF16E38007C5152 /* WordViewController.swift in Sources */,
+				C39811E81BF16E9D007C5152 /* SpellingDataStore.xcdatamodeld in Sources */,
+				C39811DE1BF16E38007C5152 /* FirstViewController.swift in Sources */,
+				C39811E21BF16E38007C5152 /* SubCategoryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE526D4D1BE0491900001A15 /* subcrapTests.swift in Sources */,
+				C39811EC1BF16F3B007C5152 /* subcrapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE526D581BE0491900001A15 /* subcrapUITests.swift in Sources */,
+				C39811F01BF16F57007C5152 /* subcrapUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,10 +317,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FE526D3B1BE0491900001A15 /* Main.storyboard */ = {
+		C39811F11BF17045007C5152 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FE526D3C1BE0491900001A15 /* Base */,
+				C39811F21BF17045007C5152 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -408,9 +413,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = subcrap/Info.plist;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "$(SRCROOT)/SuperSpelling/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.awesome.superspellingz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesome.superspelling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -419,9 +425,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = subcrap/Info.plist;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "$(SRCROOT)/SuperSpelling/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.awesome.superspellingz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awesome.superspelling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -516,13 +523,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C31538871BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodeld */ = {
+		C39811E71BF16E9D007C5152 /* SpellingDataStore.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C31538881BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodel */,
 			);
-			currentVersion = C31538881BEFDD5B00CFD271 /* SpellingDataStore.xcdatamodel */;
-			path = SpellingDataStore.xcdatamodeld;
+			name = SpellingDataStore.xcdatamodeld;
+			path = ../SuperSpelling/SpellingDataStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
