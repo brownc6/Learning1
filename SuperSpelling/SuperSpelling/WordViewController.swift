@@ -11,6 +11,7 @@ import Foundation
 
 class WordViewController: UIViewController {
 
+    var setLevel : String!
     var words : [String]? = ["set","two"]
     var gameStyle : String!
     var GameWordsCat : String!

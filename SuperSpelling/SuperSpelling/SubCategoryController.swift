@@ -10,6 +10,7 @@ import UIKit
 
 class SubCategoryController: UITableViewController {
 
+    var setLevel : String!
     var SubCats : [String]?
     var Cat : String?
 
@@ -71,6 +72,7 @@ class SubCategoryController: UITableViewController {
             let indexPath = tableView.indexPathForSelectedRow
             let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!
             destination.GameWordsCat = currentCell.textLabel?.text
+            destination.setLevel = setLevel
             
         }
     

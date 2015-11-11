@@ -6,16 +6,20 @@
 //  Copyright © 2015 Awesome Crap Industries. All rights reserved.
 //
 
+
 import UIKit
 
 class WordCategoryController: UITableViewController {
 
+    
+
+    var setLevel : String!
     private let cellStuff: [String] = ["High Frequency","Word Endings","Initial Blend"]
     private var selectedCellIndexPath : NSIndexPath?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+                // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,6 +66,7 @@ class WordCategoryController: UITableViewController {
             let destination = segue.destinationViewController as! SubCategoryController
             let myIndexPath = self.tableView.indexPathForSelectedRow
             let row = myIndexPath?.row
+            destination.setLevel = setLevel
             if row == 0 {
                 destination.SubCats = ["1 Hundred", "2 Hundred", "3 Hundred","4 Hundred","5 Hundred"]
                 destination.Cat = cellStuff[0]

@@ -21,6 +21,7 @@
 		C39811EF1BF16F57007C5152 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C39811ED1BF16F57007C5152 /* Info.plist */; };
 		C39811F01BF16F57007C5152 /* subcrapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39811EE1BF16F57007C5152 /* subcrapUITests.swift */; };
 		C39811F81BF171C7007C5152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39811F61BF171C7007C5152 /* Main.storyboard */; };
+		C3D015C31BF309BE001EEE13 /* ProfileScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D015C21BF309BE001EEE13 /* ProfileScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		C39811ED1BF16F57007C5152 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SuperSpellingUITests/Info.plist; sourceTree = SOURCE_ROOT; };
 		C39811EE1BF16F57007C5152 /* subcrapUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = subcrapUITests.swift; path = SuperSpellingUITests/subcrapUITests.swift; sourceTree = SOURCE_ROOT; };
 		C39811F71BF171C7007C5152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SuperSpelling/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		C3D015C21BF309BE001EEE13 /* ProfileScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileScreenController.swift; path = SuperSpelling/ProfileScreenController.swift; sourceTree = SOURCE_ROOT; };
 		FE526D321BE0491800001A15 /* SuperSpelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSpelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D481BE0491900001A15 /* SuperSpellingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSpellingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE526D531BE0491900001A15 /* SuperSpellingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSpellingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 				C39811D51BF16E22007C5152 /* AppDelegate.swift */,
 				C39811E51BF16E67007C5152 /* Assets.xcassets */,
 				C39811D71BF16E38007C5152 /* FirstViewController.swift */,
+				C3D015C21BF309BE001EEE13 /* ProfileScreenController.swift */,
 				C39811F61BF171C7007C5152 /* Main.storyboard */,
 				C39811D91BF16E38007C5152 /* Info.plist */,
 				C39811E71BF16E9D007C5152 /* SpellingDataStore.xcdatamodeld */,
@@ -280,6 +283,7 @@
 				C39811DF1BF16E38007C5152 /* GameChoiceController.swift in Sources */,
 				C39811E41BF16E38007C5152 /* WordViewController.swift in Sources */,
 				C39811E81BF16E9D007C5152 /* SpellingDataStore.xcdatamodeld in Sources */,
+				C3D015C31BF309BE001EEE13 /* ProfileScreenController.swift in Sources */,
 				C39811DE1BF16E38007C5152 /* FirstViewController.swift in Sources */,
 				C39811E21BF16E38007C5152 /* SubCategoryController.swift in Sources */,
 			);
