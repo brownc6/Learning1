@@ -11,7 +11,8 @@ import UIKit
 class GameChoiceController: UITableViewController {
 
     var setLevel : String!
-    var GameWordsCat : String!
+    var wordCat : String?
+    var subCat : String!
     private let GameList: [String] = ["L,C,W,C","Rainbow Write","Word Splat","Word Search","Repeat x5"]
     
     override func viewDidLoad() {
@@ -62,7 +63,8 @@ class GameChoiceController: UITableViewController {
             let indexPath = tableView.indexPathForSelectedRow
             let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!
             destination.gameStyle = currentCell.textLabel?.text
-            destination.GameWordsCat = GameWordsCat
+            destination.wordCat = wordCat
+            destination.subCat = subCat
             destination.setLevel = setLevel
             
         }

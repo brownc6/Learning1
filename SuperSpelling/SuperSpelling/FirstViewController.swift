@@ -14,9 +14,6 @@ class FirstViewController: UIViewController {
     @IBOutlet private var labelOne : UILabel!
     
   
-
-    private var tapCounter : Int = 0
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

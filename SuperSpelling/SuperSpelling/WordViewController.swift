@@ -12,9 +12,10 @@ import Foundation
 class WordViewController: UIViewController {
 
     var setLevel : String!
+    var wordCat : String?
+    var subCat : String!
     var words : [String]? = ["set","two"]
     var gameStyle : String!
-    var GameWordsCat : String!
     var countWord : Int = 0
     var gameScore : Int = 0
     var wordSetArray1 : [String] = ["the","and","a","to","said","in","he","I","of","it"]
@@ -38,7 +39,7 @@ class WordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        switch GameWordsCat
+        switch subCat
         {
         case "1 Hundred" :
             words = wordSetArray1
@@ -77,6 +78,7 @@ class WordViewController: UIViewController {
             }else{
                 self.readyLabel.text = "A Different Game"
                 self.readyLabel.hidden = false
+                
             }
             
         }

@@ -11,8 +11,8 @@ import UIKit
 class SubCategoryController: UITableViewController {
 
     var setLevel : String!
-    var SubCats : [String]?
-    var Cat : String?
+    var subCat : [String]?
+    var wordCat : String?
 
     
     override func viewDidLoad() {
@@ -35,7 +35,7 @@ class SubCategoryController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (SubCats?.count)!
+        return (subCat?.count)!
     }
 
     
@@ -46,7 +46,7 @@ class SubCategoryController: UITableViewController {
 //            cell = UITableViewCell()
 //        }
         
-        cell.textLabel?.text = SubCats![indexPath.row]
+        cell.textLabel?.text = subCat![indexPath.row]
         
         return cell
 
@@ -71,9 +71,9 @@ class SubCategoryController: UITableViewController {
             let destination = segue.destinationViewController as! GameChoiceController
             let indexPath = tableView.indexPathForSelectedRow
             let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!
-            destination.GameWordsCat = currentCell.textLabel?.text
+            destination.wordCat = wordCat
+            destination.subCat = currentCell.textLabel?.text
             destination.setLevel = setLevel
-            
         }
     
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

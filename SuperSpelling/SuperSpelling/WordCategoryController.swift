@@ -11,10 +11,10 @@ import UIKit
 
 class WordCategoryController: UITableViewController {
 
-    
+   
 
     var setLevel : String!
-    private let cellStuff: [String] = ["High Frequency","Word Endings","Initial Blend"]
+    private let wordCat: [String] = ["High Frequency","Word Endings","Initial Blend"]
     private var selectedCellIndexPath : NSIndexPath?
 
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class WordCategoryController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return cellStuff.count
+            return wordCat.count
         } else {
             return 0
         }
@@ -46,7 +46,7 @@ class WordCategoryController: UITableViewController {
             cell = UITableViewCell()
         }
 
-        cell?.textLabel?.text = cellStuff[indexPath.row]
+        cell?.textLabel?.text = wordCat[indexPath.row]
 
         return cell!
     }
@@ -68,14 +68,14 @@ class WordCategoryController: UITableViewController {
             let row = myIndexPath?.row
             destination.setLevel = setLevel
             if row == 0 {
-                destination.SubCats = ["1 Hundred", "2 Hundred", "3 Hundred","4 Hundred","5 Hundred"]
-                destination.Cat = cellStuff[0]
+                destination.subCat = ["1 Hundred", "2 Hundred", "3 Hundred","4 Hundred","5 Hundred"]
+                destination.wordCat = wordCat[0]
             } else if row == 1 {
-                destination.SubCats = ["Word Endings 1","Word Endings 2","Word Endings 3"]
-                destination.Cat = cellStuff[1]
+                destination.subCat = ["Word Endings 1","Word Endings 2","Word Endings 3"]
+                destination.wordCat = wordCat[1]
             } else if row == 2 {
-                destination.SubCats = ["Initial Blend 1", "Initial Blend 2", "Initial Blend 3"]
-                destination.Cat = cellStuff[2]
+                destination.subCat = ["Initial Blend 1", "Initial Blend 2", "Initial Blend 3"]
+                destination.wordCat = wordCat[2]
             }
         }
         
